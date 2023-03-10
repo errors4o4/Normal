@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            position: relative;
+            left: 300px;
+            top: 400px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+    <button id="button">Button</button>
+
+    <button onclick="record()">Start</button>
+    <script>
+        let rec = new webkitSpeechRecognition()
+        rec.onresult = (event) => {
+            let transcript = event.results[0][0].transcript
+            console.log(`Said: ${transcript}`)
+            let text = transcript.split(' ')
+            let ele = document.querySelector(`#${text[0]}`)
+            delete text[0]
+            ele.textContent = text.join('')
+            ele.style.backgroundColor = 'yellow'
+            
+        }
+        const record = () => rec.start()
+    </script>
+</body>
+</html>

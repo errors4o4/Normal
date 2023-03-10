@@ -1,0 +1,37 @@
+.form-check-label {
+    font-size: large;
+}
+.register-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    gap: 5px 0px;
+    margin-top: 5px;
+}
+input {
+    border-color: #38caef !important;
+}
+input:focus {
+    box-shadow: 0 0 5px 1px #38caef !important;
+}
+input[type='range'] {
+    border-radius: 10px;
+}
+.form-select:focus {
+    box-shadow: 0 0 5px 1px #38caef !important;
+}
+@media screen and (max-width:516px) {
+    .register-form {
+        margin-top: 2px;
+        font-size: medium;
+        gap: 0;
+    }
+}
+@media screen and (max-width:1028px) {
+    .register-form {
+        font-size: medium;
+        gap: 0px;
+    }
+}

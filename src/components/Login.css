@@ -1,0 +1,99 @@
+* {
+    font-size: large;
+}
+/* button {
+    --color: #38caef;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    border-color: #38caef;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    border-color: #38caef;
+}
+
+button:hover {
+    color: #fff;
+    border-color: #38caef;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+    border-color: #38caef;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+    border-color: #38caef;
+}
+
+button:active:before {
+    border-color: #38caef;
+    background: #38caef;
+    -webkit-transition: background 0s;
+    transition: background 0s;
+} */
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    display: grid;
+    row-gap: 1rem;
+}
+.login-register-btns-container {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+}
+h5 {
+    color: gray;
+}
+h5:hover {
+    color: #fff;
+}
+@media screen and (max-width:512px){
+    .login-form {
+        width: 90%;
+    }
+}
+@media screen and (max-width:912px){
+    .login-form {
+        width: 85%;
+    }
+}
+input {
+    border-color: rgb(17, 0, 100);
+  }
+input:focus {
+    box-shadow: 5px 5px 5px rgb(17, 0, 100);
+  }
